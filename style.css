@@ -1,0 +1,216 @@
+body {
+    font-family: "Rammetto One", serif;
+    background-color: rgb(15, 15, 26);
+}
+.tudo {
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+.putin {
+ 
+
+width: 158px;
+height: 40px;
+padding: 8px 12px 8px 12px;
+gap: 8px;
+border-radius: 6px;
+opacity: 0px;
+
+    background: var(--grayscale-gray-200, #131320);
+    color: var(--grayscale-gray-500, #7A7B9F);
+
+}
+.pulastro {
+    width: 158px;
+    height: 40px;
+    padding: 8px 12px 8px 12px;
+    gap: 8px;
+    border-radius: 6px;
+    opacity: 0px;
+
+    background: var(--grayscale-gray-300, #1A1B2D);
+    color: var(--brand-purple-light, #A85FDD);
+}
+
+h1 {
+    font-family: "Rammetto One", serif;
+    color: white;
+font-size: 24px;
+font-weight: 400;
+line-height: 40.54px;
+text-align: left;
+
+}
+
+.entra {
+    width: 328px;
+height: 48px;
+padding: 12px 20px 12px 20px;
+gap: 8px;
+border-radius: 6px;
+opacity: 0px;
+background: var(--brand-purple-base, #892CCD);
+color: white;
+margin-top: 50px;
+}
+button {
+    border: none;
+}
+.input-wrapper {
+    position: relative;
+    width: 328px; /* Ajuste conforme necessário */
+    gap: 6px;
+}
+
+.svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    width: 100%;
+    height: 48px; /* Aumentei a altura para acomodar o ícone e o texto */
+    padding-left: 40px; /* Espaço extra à esquerda para a imagem */
+    padding-right: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--grayscale-gray-300, #1A1B2D);
+    background-color: rgb(15, 15, 26);
+    color: white;
+    box-sizing: border-box; /* Para garantir que padding e largura funcionem corretamente */
+}
+
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    width: 323px;
+height: 43px;
+padding: 4px;
+gap: 4px;
+border-radius: 10px;
+opacity: 0px;
+background: var(--grayscale-gray-200, #131320);
+
+}
+
+
+.imput {
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+
+.esquerda {
+    position: relative; /* Para posicionar elementos dentro da div em relação a ela */
+}
+
+.esquerda img:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+.gigante {
+    width: 100%; /* Deixe a imagem grande ocupar toda a largura disponível */
+    height: auto;
+}
+
+h3, .hh {
+    position: absolute;
+    left: 20px;
+    color: white;
+}
+
+h3 {
+    bottom: 120px; /* Ajuste a distância da parte inferior da imagem */
+    font-size: 18px; /* Ajuste conforme necessário */
+    margin-left: 10px;
+    color: var(--grayscale-gray-600, #B5B6C9);
+}
+
+.hh {
+    bottom: 30px; /* Ajuste a distância da parte inferior da imagem */
+    font-size: 24px;
+    line-height: 1.2;
+    margin-left: 10px;
+    color: var(--grayscale-gray-700, #E4E5EC);
+
+}
+
+.dozentos {
+   height: 63px;
+    width: 30px;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+@media (max-width: 1030px) {
+    .tudo {
+        flex-direction: column; /* Coloca a direita abaixo da esquerda */
+        align-items: center;
+    }
+}
+@media (max-width: 820px) {
+    .tudo {
+        flex-direction: column; /* Coloca a direita abaixo da esquerda */
+        align-items: center;
+    }
+
+    .esquerda {
+        max-width: 100%; /* A esquerda ocupa toda a largura disponível */
+    }
+
+    .direita {
+        max-width: 100%; /* A direita também ocupa toda a largura disponível */
+        margin-top: 20px; /* Espaçamento entre esquerda e direita */
+    }
+
+    h3, .hh {
+        font-size: 16px; /* Diminui o tamanho dos textos em telas menores */
+    }
+
+    .putin, .pulastro, .entra {
+        width: 90%; /* Os botões diminuem um pouco em telas menores */
+        margin: 10px 0; /* Espaçamento entre os botões */
+    }
+
+    input {
+        width: 90%; /* Ajuste dos campos de input */
+    }
+
+    .svg {
+        width: 16px; /* Ajusta o tamanho dos ícones dentro dos inputs */
+        height: 16px;
+    }
+}
+
+/* Media query para telas muito pequenas (até 360px) */
+@media (max-width: 360px) {
+    h3, .hh {
+        font-size: 14px; /* Ajuste adicional de texto em telas bem pequenas */
+    }
+
+    .putin, .pulastro, .entra {
+        width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .svg {
+        width: 14px;
+        height: 14px;
+    }
+}
